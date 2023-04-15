@@ -31,3 +31,30 @@
 .Solid-Logo {
   grid-area: Solid-Logo;
 }
+
+.Nav-Menu {
+  grid-area: Nav-Menu;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.Nav-Menu button {
+  width: 100%;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Nav-Menu button:hover {
+  background-color: #0056b3;
+}
