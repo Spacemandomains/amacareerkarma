@@ -5,13 +5,13 @@ body {
 
 #video-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 #video-container iframe {
   width: 50%;
   height: 400px;
-  margin-right: 20px;
 }
 
 .nav-menu {
