@@ -34,4 +34,15 @@
   margin-left: 20px;
   order: 2;
   width: 100px;
+	
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  margin-left: auto;
+}
+
 }
