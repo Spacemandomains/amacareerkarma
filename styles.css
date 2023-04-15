@@ -20,6 +20,11 @@
   padding-bottom: 4in;
 }
 
+.Video-Gallary iframe,
+.Nav-Menu button {
+  height: 400px;
+}
+
 .Nav-Menu {
   grid-area: Nav-Menu;
   padding-bottom: 4in;
