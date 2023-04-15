@@ -1,47 +1,28 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
-
-header {
-  padding: 20px;
-  text-align: center;
-}
-
-.logo {
-  width: 50%;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
-  grid-template-rows: 0.2fr 2.8fr 1fr;
+  grid-template-rows: auto 100%;
+  gap: 2rem;
+  grid-auto-flow: row;
   grid-template-areas:
     "LogoHeader LogoHeader"
-    "Video-Gallery Nav-Menu"
-    "Solid-Logo Solid-Logo";
-  gap: 14px 8px;
-  grid-row-gap: 2in; /* Add this line */
+    "Video-Gallery Nav-Menu";
 }
-
-/* Rest of the CSS code for the div elements */
 
 .LogoHeader {
   grid-area: LogoHeader;
 }
 
-.Video-Gallary {
-  grid-area: Video-Gallary;
-  padding: 4%;
+.Video-Gallery {
+  grid-area: Video-Gallery;
+  padding-bottom: 56.25%;
+  position: relative;
 }
 
-.Video-Gallary iframe {
+.Video-Gallery iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -49,27 +30,21 @@ header {
 .Nav-Menu {
   grid-area: Nav-Menu;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 4%;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu-button {
-  background-color: #007bff;
-  color: #fff;
+.nav-button {
+  padding: 2rem;
+  height: 100%;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 20px;
-  width: 100%;
-  margin-bottom: 14px;
-  height: 400px;
+  background-color: #0047AB;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.Image-Gallery {
-  grid-area: Image-Gallery;
-}
-
-.Solid-Logo {
-  grid-area: Solid-Logo;
+.nav-button:not(:last-child) {
+  margin-right: 2rem;
 }
