@@ -1,24 +1,21 @@
-/* Apply grid layout to the container element */
 .container {
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
-  grid-template-rows: 0.2fr 0.2fr 2fr 2fr 1fr;
+  grid-template-rows: 0.2fr 2.2fr 2fr 1fr;
   gap: 14px 8px;
   grid-auto-flow: row;
   grid-template-areas:
-    "LogoHeader LogoHeader"
     "LogoHeader LogoHeader"
     "Video-Gallary Nav-Menu"
     "Image-Gallery Image-Gallery"
     "Solid-Logo Solid-Logo";
 }
 
-/* Assign grid areas to each div element */
 .LogoHeader {
   grid-area: LogoHeader;
 }
 
-.Video-Gallary {
+.Video-Gallery {
   grid-area: Video-Gallary;
 }
 
