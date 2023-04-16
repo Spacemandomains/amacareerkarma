@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example Layout</title>
+    <title>Career Karma</title>
     <style>
       /* Add CSS styles here */
       body {
@@ -10,70 +10,84 @@
         padding: 0;
       }
       header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
+        background-image: url('careerkarmalogos/CK Logo Full Color.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
       }
-      nav {
-        background-color: #f2f2f2;
-        height: 50px;
+      #video-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      nav a {
-        color: #333;
-        text-decoration: none;
-        padding: 10px;
-      }
-      main {
-        display: flex;
-        flex-wrap: wrap;
+        align-items: flex-start;
         justify-content: space-between;
         padding: 20px;
       }
-      article {
-        width: 30%;
+      #video-container iframe {
+        width: 60%;
+        height: 400px;
+      }
+      #nav-container {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 40%;
         background-color: #f2f2f2;
-        margin-bottom: 20px;
-        padding: 10px;
+        padding: 20px;
         box-sizing: border-box;
       }
-      footer {
-        background-color: #333;
-        color: #fff;
+      #nav-container a {
+        display: block;
+        text-decoration: none;
+        color: #333;
         padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      #nav-container a:last-child {
+        border-bottom: none;
+      }
+      #best-of-container {
         text-align: center;
+        padding: 20px;
+        background-color: #f2f2f2;
+        box-sizing: border-box;
+      }
+      #best-of-container h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+      #images-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      #images-container img {
+        width: 23%;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Example Layout</h1>
-    </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <main>
-      <article>
-        <h2>Article 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-      </article>
-      <article>
-        <h2>Article 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-      </article>
-      <article>
-        <h2>Article 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-      </article>
-    </main>
-    <footer>
-      <p>&copy; 2023 Example Layout</p>
-    </footer>
+    <header></header>
+    <div id="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0RBAR4RMiw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div id="nav-container">
+        <a href="#">UX Designer</a>
+        <a href="#">Software Engineer</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Data Science</a>
+      </div>
+    </div>
+    <div id="best-of-container">
+      <h2>The Best Of Career Karma</h2>
+    </div>
+    <div id="images-container">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+    </div>
   </body>
 </html>
+
 
