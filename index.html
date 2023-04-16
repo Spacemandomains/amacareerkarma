@@ -27,21 +27,34 @@
         height: 400px;
       }
       #nav-container {
-        display: flex;
-        flex-direction: column;
-        height: 400px;
-        width: 40%;
-        background-color: #f2f2f2;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-      #nav-container a {
-        display: block;
-        text-decoration: none;
-        color: #333;
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-      }
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 40%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#nav-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#nav-container a:hover {
+  background-color: #eee;
+}
       #nav-container a:last-child {
         border-bottom: none;
       }
@@ -82,10 +95,10 @@
       <h2>The Best Of Career Karma</h2>
     </div>
     <div id="images-container">
-      <img src="image1.jpg" alt="Image 1">
-      <img src="image2.jpg" alt="Image 2">
-      <img src="image3.jpg" alt="Image 3">
-      <img src="image4.jpg" alt="Image 4">
+      <img src="careerkarmaphotos/Iddris Sandu Live Fireside Chat.png" alt="Iddris Sandu">
+      <img src="careerkarmaphotos/Ruben Harris-21.jpg" alt="Ruben Harris">
+      <img src="careerkarmaphotos/Ruben Harris-22.jpg" alt="Ruben Harris">
+      <img src="careerkarmaphotos/Ayo Duyile-08.jpg" alt="Ayo Duyile">
     </div>
   </body>
 </html>
